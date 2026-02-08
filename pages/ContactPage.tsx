@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
       <div className="py-24 bg-zinc-950 border-b border-zinc-900 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact</h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+          <p className="text-zinc-400 text-lg max-w-2xl md:max-w-none mx-auto">
             정확한 물류 설계를 위해 아래 정보를 포함하여 이메일로 문의주시면 신속히 확인해 드립니다.
           </p>
         </div>
