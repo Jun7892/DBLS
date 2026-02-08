@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <MapPin size={18} className="text-zinc-400 mt-1 shrink-0" />
               <div className="text-zinc-500 text-sm leading-relaxed">
                 <p>인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)</p>
-                <p className="mt-1">26-6 Namju-gil, Michuhol-gu, Incheon 22158, Republic of Korea</p>
+                <p className="mt-1">26-6 Namju-gil, Michuhol-gu, Incheon, 22158, Republic of Korea</p>
               </div>
             </div>
             <p className="text-zinc-500 text-sm max-w-md">

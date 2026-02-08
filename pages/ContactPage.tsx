@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
               <div className="p-6 bg-zinc-950 border border-zinc-800 rounded-sm">
                 <p className="text-zinc-200 text-lg mb-2">인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)</p>
                 <p className="text-zinc-500 text-sm leading-relaxed italic">
-                  26-6 Namju-gil, Michuhol-gu, Incheon 22158, Republic of Korea
+                  26-6 Namju-gil, Michuhol-gu, Incheon, 22158, Republic of Korea
                 </p>
               </div>
             </div>
