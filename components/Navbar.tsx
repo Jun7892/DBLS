@@ -22,8 +22,13 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-xl md:text-2xl font-bold tracking-tighter text-white">
-              DONGBANG LOGIS CO., LTD.
+            <Link to="/" className="flex flex-col group">
+              <span className="text-lg md:text-xl font-bold tracking-tighter text-white leading-tight group-hover:text-zinc-300 transition-colors">
+                DONGBANG LOGIS CO., LTD.
+              </span>
+              <span className="text-[10px] font-medium text-zinc-500 tracking-[0.2em] mt-0.5">
+                (주)동방엘에스
+              </span>
             </Link>
           </div>
           

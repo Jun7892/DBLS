@@ -8,7 +8,10 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">DONGBANG LOGIS CO., LTD.</h2>
+            <div className="mb-4">
+              <h2 className="text-xl font-bold tracking-tight text-white">DONGBANG LOGIS CO., LTD.</h2>
+              <p className="text-sm text-zinc-500 font-medium mt-1">(주)동방엘에스</p>
+            </div>
             <div className="flex items-start gap-3 mb-6">
               <MapPin size={18} className="text-zinc-400 mt-1 shrink-0" />
               <div className="text-zinc-500 text-sm leading-relaxed">

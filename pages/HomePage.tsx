@@ -18,9 +18,16 @@ const HomePage: React.FC = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
-            DONGBANG LOGIS CO., LTD.<br />
-            <span className="text-zinc-400 text-3xl md:text-5xl lg:text-6xl mt-4 block italic font-light">The Global Logistics Gateway</span>
+          <h1 className="flex flex-col items-center mb-8">
+            <span className="text-sm md:text-base font-medium tracking-[0.3em] text-zinc-400 uppercase mb-4 block">
+              (주)동방엘에스
+            </span>
+            <span className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight block">
+              DONGBANG LOGIS CO., LTD.
+            </span>
+            <span className="text-zinc-500 text-2xl md:text-4xl lg:text-5xl mt-6 block italic font-light">
+              The Global Logistics Gateway
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             공항·항만을 중심으로 한 국내 운송과 수출입 실무를 전담하며,<br className="hidden md:block" /> 
@@ -51,7 +58,7 @@ const HomePage: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-8">회사 소개</h2>
               <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
                 <p>
-                  <strong className="text-white underline underline-offset-4 decoration-zinc-700">Dongbang Logis Co., Ltd.</strong>는 국내 및 해외 물류 과정 중 발생하는 국내 구간 운송 및 통관 실무를 전문으로 수행하는 물류 기업입니다.
+                  <strong className="text-white underline underline-offset-4 decoration-zinc-700">(주)동방엘에스 (Dongbang Logis Co., Ltd.)</strong>는 국내 및 해외 물류 과정 중 발생하는 국내 구간 운송 및 통관 실무를 전문으로 수행하는 물류 기업입니다.
                 </p>
                 <p>
                   국내 공장 출고부터 공항·항만 반입, 또는 해외 도착 화물의 공항·항만 인수 후 국내 <strong className="text-white">수령 업체까지의 통관 및 운송을 책임집니다.</strong> 
