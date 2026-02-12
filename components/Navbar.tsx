@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,10 +23,10 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex flex-col group">
               <span className="text-lg md:text-xl font-bold tracking-tighter text-white leading-tight group-hover:text-zinc-300 transition-colors">
-                DONGBANG LOGIS CO., LTD.
+                DONGBANG LS CO., LTD.
               </span>
               <span className="text-[10px] font-medium text-zinc-500 tracking-[0.2em] mt-0.5">
-                (주)동방엘에스
+                (주) 동방엘에스
               </span>
             </Link>
           </div>

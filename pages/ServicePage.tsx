@@ -1,23 +1,34 @@
-
 import React from 'react';
 import { ArrowUpRight, ArrowDownRight, PackageCheck, Info, Layers } from 'lucide-react';
 
 const ServicePage: React.FC = () => {
   const services = [
     {
-      title: '국내 → 해외 (수출 구간)',
-      icon: <ArrowUpRight className="text-white" size={40} />,
-      desc: '국내 화물을 인수하여 수출에 필요한 서류 검토 및 통관을 거쳐 공항·항만까지 안전하게 운송합니다. 수출 물류의 시작을 책임집니다.'
-    },
-    {
-      title: '해외 → 국내 (수입 구간)',
+      title: 'Import Customs Clearance (수입 통관)',
       icon: <ArrowDownRight className="text-white" size={40} />,
-      desc: '도착 화물을 공항·항만에서 신속하게 인수하고 수입 통관 후 국내 도착지까지 정확하게 배송합니다. 수입 물류의 핵심 단계를 전담합니다.'
+      items: [
+        '공항·항만 도착 화물 통관 처리',
+        '보세구역 반출 및 국내 연계 운송',
+        '국내 최종 목적지 배송 관리'
+      ]
     },
     {
-      title: '수출입 관련 부대서비스',
+      title: 'Export Customs Clearance (수출 통관)',
+      icon: <ArrowUpRight className="text-white" size={40} />,
+      items: [
+        '수출 신고 및 서류 검토',
+        '공항·항만 반입 지원',
+        '선적 전 국내 운송 연계'
+      ]
+    },
+    {
+      title: 'Bonded & Value-added Services (보세·부대작업)',
       icon: <Layers className="text-white" size={40} />,
-      desc: '화물 보수작업 및 분할작업, 보세운송 서비스 등 물류 효율을 높이는 모든 연계 실무를 함께 제공합니다. 물품 특성에 따른 맞춤형 처리가 가능합니다.'
+      items: [
+        '보수 작업 및 분할 작업',
+        '보세운송 및 특수 화물 처리',
+        '긴급/소량 화물 대응'
+      ]
     }
   ];
 
@@ -26,9 +37,9 @@ const ServicePage: React.FC = () => {
       {/* Header */}
       <div className="py-24 bg-zinc-950 border-b border-zinc-900 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">통관 및 국내 물류 서비스</h1>
           <p className="text-zinc-400 text-lg max-w-2xl">
-            Dongbang Logis Co., Ltd.는 국제 물류의 복잡한 과정 중 핵심이 되는 
+            Dongbang LS Co., Ltd.는 국제 물류의 복잡한 과정 중 핵심이 되는 
             국내 통관 및 운송 구간을 전문적으로 수행합니다.
           </p>
         </div>
@@ -41,7 +52,14 @@ const ServicePage: React.FC = () => {
             <div key={index} className="flex flex-col p-10 border border-zinc-800 rounded-sm hover:border-white transition-all duration-300 bg-zinc-950/50">
               <div className="mb-8">{service.icon}</div>
               <h3 className="text-2xl font-bold mb-6 leading-tight">{service.title}</h3>
-              <p className="text-zinc-400 leading-relaxed">{service.desc}</p>
+              <ul className="space-y-3">
+                {service.items.map((item, i) => (
+                  <li key={i} className="text-zinc-400 flex items-start gap-2">
+                    <span className="text-zinc-600 mt-1.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -60,7 +78,7 @@ const ServicePage: React.FC = () => {
           </div>
           <div className="p-8 border border-zinc-800 bg-zinc-900/30 rounded-sm">
             <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <Layers size={20} className="text-zinc-400" /> 보수 및 보세운송
+              <Layers size={20} className="text-zinc-400" /> 보세운송 및 보수·분할 작업
             </h4>
             <p className="text-zinc-400 leading-relaxed">
               수출입 화물의 상태 보완을 위한 보수작업, 대량 화물의 소분(분할)작업, 통관 전 보세 구역 간 이동인 보세운송 업무를 전문적으로 처리합니다.
@@ -81,7 +99,7 @@ const ServicePage: React.FC = () => {
                   해외 운송 구간 및 해외 현지 통관은 지정된 포워딩 업체와 협력하거나 화주 측에서 진행하며, 당사는 해당 운송의 원활한 국내 연결을 보장합니다.
                 </p>
                 <p>
-                  업무 효율과 투명성을 위해 <strong className="text-white">선결제 방식</strong>을 원칙으로 하며, 견적 승인 후 즉시 배치 및 작업에 착수합니다.
+                  원활한 업무 진행을 위해 <strong className="text-white">사전 협의 및 결제 확인 후 작업이 시작됩니다.</strong> (견적 승인 후 배차 및 작업에 착수합니다.)
                 </p>
               </div>
             </div>

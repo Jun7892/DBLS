@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Truck, Plane, Ship } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -20,19 +19,23 @@ const HomePage: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <div className="flex flex-col items-center mb-10">
             <span className="text-xs md:text-sm font-medium tracking-[0.5em] text-zinc-500 uppercase mb-6 block border-b border-zinc-800 pb-2">
-              (주)동방엘에스
+              (주) 동방엘에스
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-none block mb-6">
-              DONGBANG LOGIS
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight block mb-4">
+              공항·항만 기반 통관 및<br className="hidden md:block" /> 국제, 국내 물류 전문
             </h1>
-            <p className="text-zinc-400 text-lg md:text-2xl lg:text-3xl tracking-[0.1em] font-light max-w-4xl">
-              Professional Customs Clearance & Domestic Logistics Solution
-            </p>
+            <div className="flex flex-col items-center gap-1">
+              <p className="text-zinc-400 text-lg md:text-xl tracking-[0.05em] font-light">
+                Customs Clearance & Domestic Logistics
+              </p>
+              <p className="text-zinc-500 text-sm md:text-base font-medium">
+                Based in Incheon Airport & Port
+              </p>
+            </div>
           </div>
           
-          <p className="text-base md:text-lg text-zinc-500 mb-12 max-w-2xl mx-auto leading-relaxed font-normal">
-            공항과 항만을 잇는 가장 신속하고 정확한 물류의 맥박.<br />
-            (주)동방엘에스가 귀사의 성공적인 수출입 비즈니스를 지원합니다.
+          <p className="text-base md:text-lg text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
+            수입·수출 통관, 보세화물 처리, 국내 연계 운송까지 원스톱으로 지원합니다.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -40,13 +43,13 @@ const HomePage: React.FC = () => {
               to="/service" 
               className="bg-white text-black px-10 py-4 rounded-sm font-bold hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 text-sm uppercase tracking-wider"
             >
-              Our Services <ArrowRight size={16} />
+              OUR SERVICES (서비스 보기) <ArrowRight size={16} />
             </Link>
             <Link 
               to="/contact" 
               className="border border-zinc-800 bg-transparent text-white px-10 py-4 rounded-sm font-bold hover:bg-zinc-900 transition-all text-sm uppercase tracking-wider"
             >
-              Get in Touch
+              GET IN TOUCH (문의하기)
             </Link>
           </div>
         </div>
@@ -58,16 +61,16 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <div className="inline-block px-3 py-1 border border-zinc-800 text-[10px] text-zinc-500 font-bold tracking-widest uppercase mb-6">About Us</div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-10 leading-tight">신뢰할 수 있는 물류 파트너,<br />(주)동방엘에스</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 leading-tight">신뢰할 수 있는 물류 파트너,<br />DONGBANG LS CO., LTD.</h2>
               <div className="space-y-8 text-zinc-400 text-lg leading-relaxed">
                 <p>
-                  <strong className="text-zinc-200">DONGBANG LOGIS CO., LTD.</strong>는 국내 공항 및 항만을 기점으로 하는 통관 및 내륙 운송 분야에서 풍부한 경험을 쌓아온 전문 기업입니다.
+                  <strong className="text-zinc-200">(주)동방엘에스</strong>는 인천공항 및 주요 항만을 기반으로 수입·수출 통관과 국내 내륙 운송을 전문으로 하는 물류 기업입니다.
                 </p>
                 <p>
-                  단순한 화물 운송을 넘어, 복잡한 통관 절차와 보세 구역 간 이동, 그리고 최종 목적지까지의 완벽한 연계를 통해 <strong className="text-zinc-200">고객사의 물류 비용 절감과 시간 단축</strong>을 실현합니다.
+                  보세 화물 처리(보수·분할 등) 및 공항·항만 연계 운송을 체계적으로 수행하여, <strong className="text-zinc-200">고객사의 물류 비용 절감과 업무 효율 향상</strong>을 지원합니다.
                 </p>
                 <p>
-                  우리는 모든 화물의 가치를 소중히 여기며, 소량 샘플부터 대형 프로젝트 카고까지 차별화된 맞춤형 솔루션을 제공하는 것을 원칙으로 합니다.
+                  소량 화물부터 기업 물량까지 안정적인 운영 프로세스로 대응하는 물류의 파트너가 되겠습니다.
                 </p>
               </div>
             </div>

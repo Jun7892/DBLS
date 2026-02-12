@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, Printer, MapPin } from 'lucide-react';
 
@@ -9,10 +8,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <div className="mb-10">
-              <h2 className="text-2xl font-bold tracking-tighter text-white">DONGBANG LOGIS CO., LTD.</h2>
+              <h2 className="text-2xl font-bold tracking-tighter text-white">DONGBANG LS CO., LTD.</h2>
               <div className="flex items-center gap-2 mt-2">
                 <div className="h-px w-4 bg-zinc-700"></div>
-                <p className="text-xs text-zinc-500 font-bold tracking-widest uppercase">(주)동방엘에스</p>
+                <p className="text-xs text-zinc-500 font-bold tracking-widest uppercase">(주) 동방엘에스</p>
               </div>
             </div>
             <div className="flex items-start gap-4 mb-8">
@@ -82,7 +81,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-20 pt-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-700 text-[10px] tracking-widest uppercase">
-            &copy; {new Date().getFullYear()} DONGBANG LOGIS CO., LTD. All rights reserved.
+            &copy; {new Date().getFullYear()} DONGBANG LS CO., LTD. All rights reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-zinc-800 text-[10px] uppercase tracking-widest">Privacy Policy</span>

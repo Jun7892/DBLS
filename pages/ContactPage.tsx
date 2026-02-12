@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, Clock, FileText, ClipboardList, Printer, MapPin } from 'lucide-react';
 
@@ -10,7 +9,8 @@ const ContactPage: React.FC = () => {
     '화물 종류 및 특징 (보수/분할작업 필요 여부)',
     '출발지 및 도착지 상세 정보',
     '예상 물량 및 규격 (소량 가능)',
-    '희망 일정 및 긴급성'
+    '희망 일정 및 긴급성',
+    '결제 방식: 선결제 (사전 결제 확인 후 진행)'
   ];
 
   return (
@@ -20,7 +20,7 @@ const ContactPage: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact</h1>
           <p className="text-zinc-400 text-lg max-w-2xl md:max-w-none mx-auto">
-            정확한 물류 설계를 위해 아래 정보를 포함하여 이메일로 문의주시면 신속히 확인해 드립니다.
+            정확하고 신속한 통관/운송 진행을 위해 아래 정보를 포함하여 이메일로 문의해 주시면 빠르게 안내드리겠습니다.
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@ const ContactPage: React.FC = () => {
                 <span className="text-sm font-bold text-zinc-500">Request Example</span>
               </div>
               <p className="text-sm text-zinc-500 italic">
-                "Dongbang Logis Co., Ltd. 담당자님, [회사명]입니다. 항공 화물 통관 및 [작업내용]을 포함한 국내 운송 견적을 요청드립니다..."
+                "Dongbang LS Co., Ltd. 담당자님, [회사명]입니다. 항공 화물 통관 및 [작업내용]을 포함한 국내 운송 견적을 요청드립니다..."
               </p>
             </div>
           </div>
