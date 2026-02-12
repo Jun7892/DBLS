@@ -21,10 +21,10 @@ const HomePage: React.FC = () => {
             <span className="text-xs md:text-sm font-medium tracking-[0.5em] text-zinc-500 uppercase mb-6 block border-b border-zinc-800 pb-2">
               (주) 동방엘에스
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight block mb-4">
-              공항·항만 기반 통관 및<br className="hidden md:block" /> 국제, 국내 물류 전문
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight block mb-6">
+              공항·항만 기반 통관 및<br className="hidden md:block" /> 국제 및 국내 물류 전문
             </h1>
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-2">
               <p className="text-zinc-400 text-lg md:text-xl tracking-[0.05em] font-light">
                 Customs Clearance & Domestic Logistics
               </p>
@@ -35,7 +35,8 @@ const HomePage: React.FC = () => {
           </div>
           
           <p className="text-base md:text-lg text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
-            수입·수출 통관, 보세화물 처리, 국내 연계 운송까지 원스톱으로 지원합니다.
+            수입·수출 통관, 보세 화물 처리, 국내 연계 운송까지<br className="hidden sm:block" />
+            원스톱으로 지원합니다.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -59,18 +60,24 @@ const HomePage: React.FC = () => {
       <section className="py-32 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <div className="inline-block px-3 py-1 border border-zinc-800 text-[10px] text-zinc-500 font-bold tracking-widest uppercase mb-6">About Us</div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-10 leading-tight">신뢰할 수 있는 물류 파트너,<br />DONGBANG LS CO., LTD.</h2>
-              <div className="space-y-8 text-zinc-400 text-lg leading-relaxed">
+            <div className="space-y-8">
+              <div className="inline-block px-3 py-1 border border-zinc-800 text-[10px] text-zinc-500 font-bold tracking-widest uppercase">About Us</div>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight">신뢰할 수 있는 물류 파트너,<br />DONGBANG LS CO., LTD.</h2>
+              <div className="space-y-6 text-zinc-400 text-lg leading-relaxed font-light">
                 <p>
-                  <strong className="text-zinc-200">(주)동방엘에스</strong>는 인천공항 및 주요 항만을 기반으로 수입·수출 통관과 국내 내륙 운송을 전문으로 하는 물류 기업입니다.
+                  <strong className="text-zinc-200">(주)동방엘에스</strong>는 인천공항 및 주요 항만을 기반으로<br className="hidden md:block" /> 수입·수출 통관과 국내 내륙 운송을 전문으로 하는 물류 기업입니다.
                 </p>
                 <p>
-                  보세 화물 처리(보수·분할 등) 및 공항·항만 연계 운송을 체계적으로 수행하여, <strong className="text-zinc-200">고객사의 물류 비용 절감과 업무 효율 향상</strong>을 지원합니다.
+                  보세 화물 처리(보수·분할 등) 및 공항·항만 연계 운송을 체계적으로 수행하여<br className="hidden md:block" /> 고객사의 물류 비용 절감과 업무 효율 향상을 지원합니다.
                 </p>
                 <p>
-                  소량 화물부터 기업 물량까지 안정적인 운영 프로세스로 대응하는 물류의 파트너가 되겠습니다.
+                  2013년 설립 이후 10년 이상 축적된 실무 경험을 바탕으로<br className="hidden md:block" /> 안정적이고 일관된 운영 시스템을 구축해왔습니다.
+                </p>
+                <p>
+                  기업 물량은 물론, 개인 고객의 소량 화물 및 샘플 운송까지 유연하게 대응합니다.
+                </p>
+                <p className="text-zinc-200 font-medium">
+                  소량 화물부터 기업 프로젝트 물량까지<br /> 책임감 있는 물류 파트너가 되겠습니다.
                 </p>
               </div>
             </div>

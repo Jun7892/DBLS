@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <MapPin size={20} className="text-zinc-500 mt-1 shrink-0" />
               <div className="text-zinc-400 text-sm leading-relaxed">
                 <p className="font-medium text-zinc-300">인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)</p>
-                <p className="mt-1 opacity-60 italic">26-6 Namju-gil, Michuhol-gu, Incheon, 22158, Republic of Korea</p>
+                <p className="mt-1 opacity-60 italic text-xs">26-6 Namju-gil, Michuhol-gu, Incheon, Republic of Korea</p>
               </div>
             </div>
             <p className="text-zinc-600 text-xs max-w-sm leading-loose">
@@ -38,7 +38,6 @@ const Footer: React.FC = () => {
                   <a href="tel:0328721714" className="text-zinc-200 hover:text-white transition-colors text-base font-medium">
                     032-872-1714
                   </a>
-                  <p className="text-[10px] text-zinc-500 mt-1">Ext. 0118 / 0119</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -84,8 +83,8 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} DONGBANG LS CO., LTD. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <span className="text-zinc-800 text-[10px] uppercase tracking-widest">Privacy Policy</span>
-            <span className="text-zinc-800 text-[10px] uppercase tracking-widest">Terms of Service</span>
+            <span className="text-zinc-800 text-[10px] uppercase tracking-widest cursor-default">Privacy Policy</span>
+            <span className="text-zinc-800 text-[10px] uppercase tracking-widest cursor-default">Terms of Service</span>
           </div>
         </div>
       </div>
