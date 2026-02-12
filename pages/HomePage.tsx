@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
               (주) 동방엘에스
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight block mb-6">
-              공항·항만 기반 통관 및<br className="hidden md:block" /> 국제 및 국내 물류 전문
+              공항·항만 기반 통관<br className="hidden md:block" /> 국제·국내 물류 전문
             </h1>
             <div className="flex flex-col items-center gap-2">
               <p className="text-zinc-400 text-lg md:text-xl tracking-[0.05em] font-light">
