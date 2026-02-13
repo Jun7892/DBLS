@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Printer, MapPin, BookOpen } from 'lucide-react';
+import { Mail, Phone, Printer, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -71,17 +71,6 @@ const Footer: React.FC = () => {
                   <p className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold mb-1">Official Inquiry</p>
                   <a href="mailto:sh872118@naver.com" className="text-zinc-200 hover:text-white transition-colors text-base font-medium break-all">
                     sh872118@naver.com
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-zinc-900/50 rounded-sm">
-                  <BookOpen size={16} className="text-zinc-400" />
-                </div>
-                <div>
-                  <p className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold mb-1">Official Blog</p>
-                  <a href="https://blog.naver.com/dongbangls_" target="_blank" rel="noopener noreferrer" className="text-zinc-200 hover:text-white transition-colors text-base font-medium break-all">
-                    blog.naver.com/dongbangls_
                   </a>
                 </div>
               </div>
