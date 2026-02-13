@@ -49,7 +49,7 @@ const ContactPage: React.FC = () => {
     },
     {
       name: 'Google Maps',
-      url: 'https://share.google/kd8odGqlq7saF8sxC',
+      url: 'https://maps.app.goo.gl/vttzSsheb3XofNZCA',
       icon: <Map size={14} />,
       color: 'hover:border-blue-500 hover:text-blue-500' // 구글 브랜드 컬러 포인트
     }
