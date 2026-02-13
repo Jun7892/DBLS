@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Clock, FileText, ClipboardList, Printer, MapPin } from 'lucide-react';
+import { Mail, Phone, Clock, FileText, ClipboardList, Printer, MapPin, BookOpen } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
   const inquiryFields = [
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
               <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
                 <Phone size={24} className="text-zinc-400" /> 연락처 및 상담 채널
               </h2>
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-6 border border-zinc-800 rounded-sm">
                   <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-1">Office Telephone</p>
                   <p className="text-xl font-medium">032-872-1714</p>
@@ -49,7 +49,16 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div className="p-6 border border-zinc-800 rounded-sm">
                   <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-1">Official E-mail</p>
-                  <p className="text-xl font-medium">sh872118@naver.com</p>
+                  <p className="text-xl font-medium break-all">sh872118@naver.com</p>
+                </div>
+                <div className="p-6 border border-zinc-800 rounded-sm sm:col-span-2 hover:border-zinc-500 transition-colors group">
+                  <a href="https://blog.naver.com/dongbangls_" target="_blank" rel="noopener noreferrer" className="block">
+                    <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-1 group-hover:text-zinc-300">Official Blog</p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-xl font-medium">blog.naver.com/dongbangls_</p>
+                      <BookOpen size={18} className="text-zinc-600 group-hover:text-zinc-300" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
