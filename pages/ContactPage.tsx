@@ -54,60 +54,61 @@ const ContactPage: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 mt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-stretch">
           
-          {/* Left Column: Vertical Contact & Location */}
-          <div className="space-y-16">
-            
-            {/* Contact List */}
-            <div>
-              <h2 className="text-xl font-bold mb-10 flex items-center gap-2 tracking-tight">
-                <span className="w-8 h-px bg-zinc-700"></span> 연락처 및 상담 채널
-              </h2>
-              <div className="space-y-4">
-                {contactMethods.map((method, idx) => (
-                  <div 
-                    key={idx} 
-                    className={`p-6 border border-zinc-800 rounded-sm flex items-center gap-6 transition-all duration-300 hover:bg-zinc-900/40 ${method.isHighlight ? 'bg-zinc-900/30 border-zinc-700' : 'bg-transparent'}`}
-                  >
-                    <div className={`p-3 rounded-full ${method.isHighlight ? 'bg-white text-black' : 'bg-zinc-900 text-zinc-500'}`}>
-                      {method.icon}
+          {/* Left Column: Balanced Contact & Location */}
+          <div className="flex flex-col">
+            <div className="flex flex-col h-full">
+              {/* Contact List */}
+              <div className="flex-grow">
+                <h2 className="text-xl font-bold mb-10 flex items-center gap-2 tracking-tight">
+                  <span className="w-8 h-px bg-zinc-700"></span> 연락처 및 상담 채널
+                </h2>
+                <div className="space-y-4">
+                  {contactMethods.map((method, idx) => (
+                    <div 
+                      key={idx} 
+                      className={`p-6 border border-zinc-800 rounded-sm flex items-center gap-6 transition-all duration-300 hover:bg-zinc-900/40 ${method.isHighlight ? 'bg-zinc-900/30 border-zinc-700' : 'bg-transparent'}`}
+                    >
+                      <div className={`p-3 rounded-full ${method.isHighlight ? 'bg-white text-black' : 'bg-zinc-900 text-zinc-500'}`}>
+                        {method.icon}
+                      </div>
+                      <div>
+                        <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-[0.2em] mb-1">
+                          {method.label}
+                        </p>
+                        <p className={`text-xl font-medium ${method.isHighlight ? 'text-white' : 'text-zinc-300'}`}>
+                          {method.value}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-[0.2em] mb-1">
-                        {method.label}
-                      </p>
-                      <p className={`text-xl font-medium ${method.isHighlight ? 'text-white' : 'text-zinc-300'}`}>
-                        {method.value}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Location Section */}
-            <div>
-              <h2 className="text-xl font-bold mb-10 flex items-center gap-2 tracking-tight">
-                <span className="w-8 h-px bg-zinc-700"></span> 오시는 길 / 주소
-              </h2>
-              <div className="p-8 bg-zinc-950 border border-zinc-800 rounded-sm flex items-start gap-5 hover:border-zinc-700 transition-colors">
-                <div className="p-3 bg-zinc-900 rounded-sm mt-1 text-zinc-400">
-                  <MapPin size={22} />
+                  ))}
                 </div>
-                <div>
-                  <p className="text-zinc-200 text-lg mb-2 font-medium leading-tight">
-                    인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)
-                  </p>
-                  <p className="text-zinc-500 text-sm leading-relaxed italic">
-                    26-6 Namju-gil, Michuhol-gu, Incheon, Republic of Korea
-                  </p>
+              </div>
+
+              {/* Location Section - Pushed to bottom to align with right side */}
+              <div className="mt-16 lg:mt-auto">
+                <h2 className="text-xl font-bold mb-10 flex items-center gap-2 tracking-tight">
+                  <span className="w-8 h-px bg-zinc-700"></span> 오시는 길 / 주소
+                </h2>
+                <div className="p-8 bg-zinc-950 border border-zinc-800 rounded-sm flex items-start gap-5 hover:border-zinc-700 transition-colors">
+                  <div className="p-3 bg-zinc-900 rounded-sm mt-1 text-zinc-400">
+                    <MapPin size={22} />
+                  </div>
+                  <div>
+                    <p className="text-zinc-200 text-lg mb-2 font-medium leading-tight">
+                      인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)
+                    </p>
+                    <p className="text-zinc-500 text-sm leading-relaxed italic">
+                      26-6 Namju-gil, Michuhol-gu, Incheon, Republic of Korea
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Inquiry Guide Card (Restored to its elegant state) */}
+          {/* Right Column: Inquiry Guide Card */}
           <div className="bg-zinc-900/30 border border-zinc-800 p-8 md:p-12 rounded-sm flex flex-col h-full relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
               <ClipboardList size={140} strokeWidth={1} />
