@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, FileText, ClipboardList, MapPin, Printer } from 'lucide-react';
+import { Mail, Phone, FileText, ClipboardList, MapPin, Printer, Navigation, Map, ExternalLink } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
   const inquiryFields = [
@@ -37,6 +37,21 @@ const ContactPage: React.FC = () => {
       value: 'sh872118@naver.com',
       icon: <Mail size={18} />,
       isHighlight: false
+    }
+  ];
+
+  const mapLinks = [
+    {
+      name: '네이버 지도',
+      url: 'https://naver.me/FyAgiYr9',
+      icon: <Navigation size={14} />,
+      color: 'hover:border-[#03C75A] hover:text-[#03C75A]' // 네이버 브랜드 컬러 포인트
+    },
+    {
+      name: 'Google Maps',
+      url: 'https://share.google/kd8odGqlq7saF8sxC',
+      icon: <Map size={14} />,
+      color: 'hover:border-blue-500 hover:text-blue-500' // 구글 브랜드 컬러 포인트
     }
   ];
 
@@ -86,22 +101,39 @@ const ContactPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Location Section - Pushed to bottom to align with right side */}
+              {/* Location Section */}
               <div className="mt-16 lg:mt-auto">
                 <h2 className="text-xl font-bold mb-10 flex items-center gap-2 tracking-tight">
                   <span className="w-8 h-px bg-zinc-700"></span> 오시는 길 / 주소
                 </h2>
-                <div className="p-8 bg-zinc-950 border border-zinc-800 rounded-sm flex items-start gap-5 hover:border-zinc-700 transition-colors">
-                  <div className="p-3 bg-zinc-900 rounded-sm mt-1 text-zinc-400">
+                <div className="p-8 bg-zinc-950 border border-zinc-800 rounded-sm flex flex-col sm:flex-row items-start gap-6 hover:border-zinc-700 transition-colors">
+                  <div className="p-3 bg-zinc-900 rounded-sm text-zinc-400 shrink-0">
                     <MapPin size={22} />
                   </div>
-                  <div>
-                    <p className="text-zinc-200 text-lg mb-2 font-medium leading-tight">
+                  <div className="flex-grow">
+                    <p className="text-zinc-200 text-lg mb-1 font-medium leading-tight">
                       인천시 미추홀구 남주길 26-6 101, 102호 (주안동 702번지)
                     </p>
-                    <p className="text-zinc-500 text-sm leading-relaxed italic">
+                    <p className="text-zinc-500 text-sm leading-relaxed italic mb-6">
                       26-6 Namju-gil, Michuhol-gu, Incheon, Republic of Korea
                     </p>
+                    
+                    {/* Map Buttons */}
+                    <div className="flex flex-wrap gap-3">
+                      {mapLinks.map((link, idx) => (
+                        <a
+                          key={idx}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex items-center gap-2 px-4 py-2 bg-zinc-900/50 border border-zinc-800 rounded-sm text-[11px] font-bold uppercase tracking-wider text-zinc-400 transition-all duration-300 ${link.color} hover:-translate-y-0.5`}
+                        >
+                          {link.icon}
+                          {link.name}
+                          <ExternalLink size={10} className="opacity-40" />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
